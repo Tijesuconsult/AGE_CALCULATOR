@@ -30,12 +30,11 @@ form.addEventListener('submit', (e)=>{
         dateOfBirth.style.border = "2px solid red"
         allcal.style.outlineColor = "red"
     }
-    // else if(dateOfBirth.value.startsWith('2')){
-    //     year.innerHTML = "Years Old"
-    // }
-    // else if(dateOfBirth.value !== "" || dateOfBirth.value !== null){
-    //        dateOfBirth.style.border = "2px solid green"   
-    // }
+   
+    else if(name.value == "" && dateOfBirth.value !== ""){
+        //    name.style.border = "2px solid red"
+           nameErr.innerHTML = "Name is Required"   
+    }
     else{
     allcal.style.outlineColor = "green"
     name.style.border = "2px solid green"
@@ -48,6 +47,7 @@ form.addEventListener('submit', (e)=>{
     nameErr.style.display = "none"
     ageErr.style.display = "none"
     hello.style.display = 'block'
+    // hello.style.fontWeight = "900"
     you.style.display = "block"
     year.style.display = "block"
     }
