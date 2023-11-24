@@ -43,7 +43,10 @@ small{
     border: 1px solid black;
 }
 #nameErr{
-    margin-left: 95px;
+    margin-left: 65px;
+}
+#ageErr{
+    margin-left: 120px;
 }
 #dateOfBirth{
     padding: 5px;
@@ -98,7 +101,7 @@ button{
     font-size: 16px;
 }
 
-@media(max-width:360px){
+/* @media(max-width:360px){
     .allcal{
         width: 250px;
         line-height: 1.0;
@@ -126,9 +129,9 @@ button{
     button{
         margin: 5px 10px;
     }
-}
+} */
 
-@media(max-width:380px){
+/* @media(max-width:380px){
     .allcal{
         width: 300px;
         line-height: 1.5;
@@ -157,4 +160,4 @@ button{
         margin: 0px 25px;
         margin-top: 50px;
     }
-}
+} */
