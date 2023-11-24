@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age-calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="allcal" id="allcal">
+    <h3>AGE CALCULATOR</h3>
+    <br>
+    <form id="form">
+        <label for="">Name:</label>
+        <input id="name" type="text">
+        <br>
+        <small id="nameErr"></small>
+        <br>
+        <label for="">Date of Birth:</label>
+        <input id="dateOfBirth" type="date">
+        <br>
+        <small  id="ageErr"></small>
+        <br>
+        <div class="namdis">
+        <p id="hello">Hello!</p>
+        <p id="nameDisplay"></p>
+    </div>
+    <div class="age">
+        <p id="you">You Are</p>
+        <p id="ageDisplay"></p>
+        <p id="year">Years Old...Thanks</p>
+    </div>        
+        <button style="background-color: red;" type="reset">Reset</button>
+        <button type="submit">Calculate</button>
+    </form>
+ </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
