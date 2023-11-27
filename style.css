@@ -5,30 +5,40 @@
 }
 body{
     width: 100%;
-    background-image: url("hero-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 450px;
 }
+label{
+    margin: 10px 0;
+}
 .allcal{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 300px;
     height: 410px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    padding: 15px;
+    margin-top: 100px;
+    padding: 17px;
     line-height: 1.5;
-    border-radius: 20px;
-    background-color: rgba(245, 245, 245, 0.5);
-    outline-style: dashed;
-    outline-width: 10px;
+    border-radius:10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* outline-style: dashed;
+    outline-width: 10px; */
 }
 h3{
     text-align: center;
-    color: rgb(2, 43, 2);
+    color: white;
     font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+span{
+    color: green;
 }
 small{
     color: red;
@@ -36,11 +46,12 @@ small{
     display: block;
 }
 #name{
-    padding: 3px 5px;
-    width: 250px;
-    border-radius: 10px;
+    padding: 7px 5px;
+    border-radius:5px;
     font-size: 16px;
-    border: 1px solid black;
+    border: none;
+    outline: none;
+    width: 100%;
 }
 #nameErr{
     /* margin-left: 65px; */
@@ -53,11 +64,12 @@ small{
     margin-right: auto;
 }
 #dateOfBirth{
-    padding: 3px 5px;
-    width: 250px;
-    border-radius: 10px;
+    padding: 7px 5px;
+    width: 100%;
+    border-radius:5px;
     font-size: 16px;
-    border: 1px solid black;
+    border: none;
+    outline: none;
 }
 #ageDisplay{
     /* border: 1px solid green;
@@ -67,6 +79,11 @@ small{
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+#nameDisplay{
+    font-weight: 800;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
 label{
     font-size: 16px;
     font-weight: 600;
@@ -74,12 +91,20 @@ label{
 .namdis{
     display: flex;
     gap: 8px;
+    align-items: center;
     line-height: 1.7;
+}
+.namdis #nameDisplay
+{
+    font-weight: 600;
+    font-size: 12px;
 }
 #hello{
     color: green;
     display: none;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
 }
 .age{
     display: flex;
@@ -88,25 +113,70 @@ label{
 }
 #you{
     display: none;
+    font-weight: 600;
+    
 }
 #year{
     display: none;
+    font-weight: 600;
 }
-button{
-    padding: 5px;
-    margin-left:40px ;    
-    /* margin-top: 40px; */
-    position: relative;
-    top: 55px;
-    background-color: green;
+.btn-submit{
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#reset:hover{
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.2);
     color: white;
-    text-align: center;
-    border: 1px solid transparent;
+    opacity: 1;
+    cursor: pointer;
+    background-color: red;
+}
+
+#calc:hover{
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+    background-color: green;
+}
+
+#calc{
+    background-color: transparent;
+    border: 2px solid green;
+    width: 100%;
     border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    background: sticky;
+    transition: 0.4s ease-in-out;
+    padding: 7px 12px;
+    opacity: 0.9;
+    color: white;
+}
+
+
+#back{
+    background-color: black; 
+    border: none;
+    opacity: 0.9;
+    transition: 0.4s ease-in-out;
+    padding: 7px 12px;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+
+#reset{
+    background-color: transparent;
+    border: 2px solid firebrick;
+    opacity: 0.9;
+    transition: 0.4s ease-in-out;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    padding: 7px 12px;
 }
 
 /* @media(max-width:360px){
